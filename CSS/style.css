@@ -1,0 +1,56 @@
+div {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+  nav{
+    background-color: aquamarine;
+    padding: 10px 0px;
+    margin-top: 50px;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+    padding:0
+  
+  }
+  nav ul li{
+    padding: 20px;
+    background-color:rgb(177, 226, 43) ;
+    transition: .4s;
+    position: relative;
+    
+  }
+  nav ul li:hover{
+    background-color: aqua;
+  }
+  nav ul li:hover > ul{
+    background-color: aqua;
+    opacity:1;
+    visibility: visible;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  nav ul li ul{
+    flex-direction: column;
+    position:absolute;
+    bottom: 0px;
+    left:0px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+  nav ul li ul li a{
+    width: 200px;
+    display: inline-block;
+  }
+  nav ul li ul li ul{
+    left:100%;
+    bottom:100%
+  }
